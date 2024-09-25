@@ -2,7 +2,7 @@ server:
   port: 8888
 spring:
   application:
-    name: ithings
+    name: things
   datasource:
     url: jdbc:postgresql://localhost:5432/ithings
     username: postgres

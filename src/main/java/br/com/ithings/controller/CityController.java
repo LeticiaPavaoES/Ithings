@@ -34,14 +34,14 @@ public class CityController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity delete(@PathVariable(name = "id") long id){
+    public ResponseEntity<CityModel> delete(@PathVariable(name = "id") long id){
         service.delete(id);
         return new ResponseEntity<>(null, HttpStatus.NO_CONTENT);
     }
 
     @GetMapping
-    public ResponseEntity<List<CityModel>> findALl(){
-        var List = service.findAll();
+    public ResponseEntity<List<CityModel>> findAll(){
+        var list = service.findAll();
         return new ResponseEntity<List<CityModel>>(list, HttpStatus.OK);
     }
 }
