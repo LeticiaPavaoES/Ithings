@@ -1,4 +1,4 @@
-package br.com.ithings.dto;
+package br.com.ithings.dto; /*dto-> data transfer object, ela serve para transferir dados de uma camada para a outra */
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
