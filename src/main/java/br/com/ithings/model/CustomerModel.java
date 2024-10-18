@@ -30,7 +30,7 @@ public class CustomerModel {
     private Date birthDate;
 
     @ManyToOne
-    @JoinColumn(name = "city_id")
+    @JoinColumn(name = "city_id") /*chave estrangeira*/
     private CityModel city;
 
 }

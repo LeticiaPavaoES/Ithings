@@ -1,5 +1,7 @@
 server:
   port: 8888
+  ssl:
+    enabled: false
 spring:
   application:
     name: things
@@ -11,3 +13,13 @@ spring:
     hibernate:
       ddl-auto: update
       show-sql: true
+  flyway:
+    baseline-on-migrate: true
+springdoc:
+  api-docs:
+    path: /docs
+    pathsToMatch: /api/**
+  swagger-ui:
+    use-root-path: true
+    #disable-swagger-default-url: true
+    path: /docs-ui
