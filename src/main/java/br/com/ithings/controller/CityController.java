@@ -1,7 +1,6 @@
 package br.com.ithings.controller;
 
 import br.com.ithings.dto.CityDto;
-import br.com.ithings.model.CityModel;
 import br.com.ithings.service.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
