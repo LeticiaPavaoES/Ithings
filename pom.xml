@@ -90,13 +90,12 @@
 			<plugin>
 				<groupId>org.flywaydb</groupId>
 				<artifactId>flyway-maven-plugin</artifactId>
-				<version>9.22.3</version>
 				<configuration>
 					<url>jdbc:postgresql://localhost:5432/ithings</url>
 					<user>postgres</user>
 					<password>123456</password>
-				<schema>public</schema>
-				<cleanDisabled>false</cleanDisabled>
+					<schemas>public</schemas>
+					<cleanDisabled>false</cleanDisabled>
 				</configuration>
 			</plugin>
 		</plugins>
